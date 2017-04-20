@@ -1,0 +1,35 @@
+
+//here I am generating 100 random numbers
+
+import java.util.Random;
+
+public class RandomNumber{
+//generating 100 random numbers
+  public void numbers{
+    Random rand = new Random();
+    for(int i=0;i<100;i++){
+      int value = rand.nextInt(100);
+      System.out.println(value);
+    }
+    
+public boolean isPrimeNumber(int value){
+         
+        for(int i=2; i<=value/2; i++){
+            if(number % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+     
+    public static void main(String a[]){
+        RandomNumber R1 = new RandomNumber();
+        System.out.println("values "+R1 .numbers);
+        RandomNumber R2 = new RandomNumber();
+        System.out.println("Is 17 prime number? "+R2 .isPrimeNumber(17));
+        System.out.println("Is 19 prime number? "+R2 .isPrimeNumber(19));
+        System.out.println("Is 15 prime number? "+R2 .isPrimeNumber(15));
+    }
+}
+  
+}

@@ -1,0 +1,36 @@
+1. How do you design an application with JMS messaging?
+
+ JMS uses four interfaces to design.
+Connection-to create session.
+Session-provides methods used to create.
+Message producer-send messages
+Message Consumer-recieve messages
+
+2.How do you handle exception in JMS consumers and how to you recover?
+
+By creating a Session
+
+3. How do you implement LRU or MRU cache?
+
+An LRU Cache is generally implemented by using a combination of a Hash Table and a Linked List.Doubly Linked List is 
+used to store list of pages with most recently used page at the start of the list. So, as more pages are added to the 
+list, least recently used pages are moved to the end of the list.
+
+4.   How would you implement Executor Service?
+
+java.util.concurrent.ExecutorService with fixed thread pool used to execute list of tasks. 
+My list of tasks will typically be around 80 - 150 and If we want we can  limit the number of threads running at any time. 
+
+5. Describe singleton design pattern – how would you implement?
+
+There are so many design patterns available in java.Singleton pattern is one of the easiest design patterns in Java. 
+This pattern involves a single class which is responsible to create an object while making sure that only single object
+ gets created. This class provides a way to access its only object which can be accessed directly without need to
+ instantiate the object of the class.
+
+6.   Describe properties of Java String..??
+
+Java String is an immutable object.Immutable object is a object that we cannot modify or change any of the values. 
+Once java String object created it cannot be modified to some other object or a different String.If we want to make 
+some changes to sequence of characters we should use StringBuffer. There are multiple ways to make an object immutable. 
+Simple a way is to make all the attributes of that class as final.Java String has all fields are marked as final.

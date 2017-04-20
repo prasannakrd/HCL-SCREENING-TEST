@@ -1,0 +1,26 @@
+
+pubic class CreateTable
+{
+public static void main(String[] args){
+public String[] columnNames;
+public Object[][] data;
+
+public void Table()
+{
+String[] columnNames = {"Id","Name","Phone","Address"};
+
+Object[][] data = {
+    {"1", "KATE","23457", , "1 MAIN STREET"},
+    {"2", "RAM","24454", , "2 MAIN STREET"},
+    {"3", "BEN","23855", , "3 MAIN STREET"},
+    
+};
+JTable table = new JTable(data, columnNames);
+                        
+} 
+
+System.out.println(table);    
+}
+             
+                        
+                     
